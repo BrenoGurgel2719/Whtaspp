@@ -398,7 +398,7 @@
       margin-bottom: 44px;
     }
 
-    .btn-whatsapp.hero {
+    #wa-hero{
       display: inline-flex;
       align-items: center;
       gap: 10px;
@@ -414,12 +414,12 @@
       cursor: pointer;
     }
 
-    .btn-whatsapp-hero:hover {
+    #wa-hero:hover {
       background: #1ebe5a;
       box-shadow: 0 6px 28px rgba(37, 211, 102, .45);
     }
 
-    .btn-whatsapp-hero:active {
+    #wa-hero:active {
       transform: scale(.97);
     }
 
@@ -1139,7 +1139,7 @@
       z-index: 1;
     }
 
-    .cta-box .btn-whatsapp-cta {
+    .cta-box #wa-cta-final {
       display: inline-flex;
       align-items: center;
       gap: 12px;
@@ -1157,7 +1157,7 @@
       z-index: 1;
     }
 
-    .cta-box .btn-whatsapp-cta:hover {
+    .cta-box #wa-cta-final:hover {
       background: #1ebe5a;
       transform: translateY(-2px);
     }
@@ -1303,7 +1303,7 @@
     }
 
     /* Button */
-    .wa-btn {
+    #wa-flutuante {
       width: 62px;
       height: 62px;
       background: #25D366;
@@ -1319,7 +1319,7 @@
       text-decoration: none;
     }
 
-    .wa-btn:hover {
+    #wa-flutuante:hover {
       transform: scale(1.08);
       box-shadow: 0 8px 32px rgba(37, 211, 102, .55);
       animation: none;
@@ -1339,7 +1339,7 @@
       }
     }
 
-    .wa-btn svg {
+    #wa-flutuant svg {
       width: 30px;
       height: 30px;
     }
@@ -1477,7 +1477,7 @@
 
         <div class="hero-ctas">
           <a href="https://wa.me/5584999990000?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20instalação%20ou%20manutenção%20de%20ar-condicionado."
-            class="btn-whatsapp hero" id="wa-hero" data-wa-location="hero" target="_blank" rel="noopener">
+            class="btn-whatsapp" id="wa-hero" data-wa-location="hero" target="_blank" rel="noopener">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
@@ -1822,7 +1822,7 @@
         <h2>Ar quente? A gente resolve<br>ainda hoje.</h2>
         <p>Mande uma mensagem agora mesmo e receba orçamento grátis em minutos.</p>
         <a href="https://wa.me/5584999990000?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20instalação%20ou%20manutenção%20de%20ar-condicionado."
-          class="btn-whatsapp-cta" id="wa-cta-final" data-wa-location="cta-final" target="_blank" rel="noopener">
+          class="btn-whatsapp" id="wa-cta-final" data-wa-location="cta-final" target="_blank" rel="noopener">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
             <path
               d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
@@ -1905,7 +1905,7 @@
     </div>
     <div class="wa-btn-wrap">
       <a href="https://wa.me/5584999990000?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20instalação%20ou%20manutenção%20de%20ar-condicionado."
-        class="wa-btn" id="wa-flutuante" data-wa-location="botao-flutuante" target="_blank" rel="noopener"
+        class="btn-whatsapp" id="wa-flutuante" data-wa-location="botao-flutuante" target="_blank" rel="noopener"
         aria-label="Chamar no WhatsApp">
         <svg viewBox="0 0 24 24" fill="#fff">
           <path
@@ -1966,6 +1966,8 @@
       }
       lastScroll = current;
     }, { passive: true });
+
+    
   </script>
 
 </body>
